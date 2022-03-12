@@ -19,3 +19,15 @@ for (let i = 0; i < ROWS; i++) {
         row.appendChild(cell);
     }
 }
+
+const cells = document.querySelectorAll('.cell');
+
+cells.forEach(cell => cell.addEventListener('mouseover',leaveTrace));
+
+function leaveTrace(e) {
+    if (e.target.style.backgroundColor === 'blue') {
+        e.target.style.backgroundColor = 'red';
+    } else {
+        e.target.style.backgroundColor = 'blue';
+    }
+}
