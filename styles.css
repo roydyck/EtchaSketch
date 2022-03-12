@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+.scratchpad {
+    border: 1px solid black;
+    padding: 0;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+}
+
+.cell {
+    height: 5px;
+    width: 5px;
+    /*border: 1px solid black;*/
+}
+
+.cell:hover {
+    background-color: blue;
+}
