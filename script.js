@@ -14,7 +14,7 @@ for (let i = 0; i < ROWS; i++) {
     scratchpad.appendChild(row);
 
     for (let j = 0; j < columns; j++) {
-        const cell = document.createElement('cell');
+        const cell = document.createElement('div');
         cell.classList.add('cell');
         row.appendChild(cell);
     }
