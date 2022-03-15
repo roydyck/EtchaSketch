@@ -3,26 +3,25 @@
     flex-direction: column;
     justify-content: center;
 }
-.container {
+#container {
     display: flex;
     justify-content: center;
 }
-.scratchpad {
+#scratchpad {
     border: 1px solid black;
     padding: 0;
+    box-sizing: border-box;
+    height: 960px;
+    width: 960px;
+    display: flex;
+    flex-direction: column;
 }
 
 .row {
     display: flex;
-    justify-content: center;
+    flex-grow: 1;
 }
 
 .cell {
-    height: 15px;
-    width: 15px;
-    /*border: 1px solid black;*/
-}
-
-.cell:hover {
-    background-color: blue;
+    flex-grow: 1;
 }
